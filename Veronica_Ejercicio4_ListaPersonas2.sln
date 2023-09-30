@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veronica_Ejercicio4_ListaPersonas2", "Veronica_Ejercicio4_ListaPersonas2.csproj", "{73788835-47B8-4CC9-B143-AFD12F36EECB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73788835-47B8-4CC9-B143-AFD12F36EECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73788835-47B8-4CC9-B143-AFD12F36EECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73788835-47B8-4CC9-B143-AFD12F36EECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73788835-47B8-4CC9-B143-AFD12F36EECB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6255B053-F486-4019-BDAD-903D85BF9E5B}
+	EndGlobalSection
+EndGlobal
