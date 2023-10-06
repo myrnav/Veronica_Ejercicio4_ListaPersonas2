@@ -42,5 +42,46 @@ o	Numero de teléfono (requerido, 6-8 cifras)
             return null; //sin esto el metodo da error. Aca devuelve una referencia nula, no tiene un objeto
                 
         }
+
+        internal string Modificar(Persona personasAModificar, Persona personaNuevaVersion)
+        {
+            //SE HACEN TODAS LAS VALIDACIONES del modelo
+            if (personaNuevaVersion.Documento <0 || personaNuevaVersion.Documento > 99_999_999)
+            {
+                return "El documento debe ser un número entre 1 y 99.999.999";
+            }
+
+            if (string.IsNullOrWhiteSpace(personaNuevaVersion.Apellido))
+            {
+                return "Debe ingresar un apellido";
+            }
+
+            if (personaNuevaVersion.Apellido.Length > 50) 
+            {
+                return "El apellido debe tener menos de 50 caracteres";
+            }
+
+            personasAModificar.Documento = personaNuevaVersion.Documento;
+            personasAModificar.Apellido = personaNuevaVersion.Apellido;
+            personasAModificar.Nombre = personaNuevaVersion.Nombre;
+            personasAModificar.Telefono = personaNuevaVersion.Telefono;
+
+            return null;
+
+        }
+
+
+        internal string Agregar(Persona personasNueva)
+        {
+            //SE HACEN TODAS LAS VALIDACIONES del modelo
+            
+
+         
+
+            return null;
+
+        }
+
+
     }
 }

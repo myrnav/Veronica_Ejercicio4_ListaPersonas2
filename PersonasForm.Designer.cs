@@ -39,6 +39,7 @@
             buttonAceptar = new Button();
             buttonCancelar = new Button();
             groupBoxPersonaEdicion = new GroupBox();
+            buttonNuevo = new Button();
             groupBoxListaPersonas = new GroupBox();
             buttonAgregar = new Button();
             buttonModificar = new Button();
@@ -124,6 +125,7 @@
             buttonAceptar.TabIndex = 8;
             buttonAceptar.Text = "Aceptar";
             buttonAceptar.UseVisualStyleBackColor = true;
+            buttonAceptar.Click += buttonAceptar_Click;
             // 
             // buttonCancelar
             // 
@@ -133,9 +135,11 @@
             buttonCancelar.TabIndex = 9;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // groupBoxPersonaEdicion
             // 
+            groupBoxPersonaEdicion.Controls.Add(buttonNuevo);
             groupBoxPersonaEdicion.Controls.Add(buttonCancelar);
             groupBoxPersonaEdicion.Controls.Add(buttonAceptar);
             groupBoxPersonaEdicion.Controls.Add(textBoxTelefono);
@@ -153,6 +157,17 @@
             groupBoxPersonaEdicion.TabIndex = 4;
             groupBoxPersonaEdicion.TabStop = false;
             groupBoxPersonaEdicion.Text = "Persona";
+            groupBoxPersonaEdicion.Enter += groupBoxPersonaEdicion_Enter;
+            // 
+            // buttonNuevo
+            // 
+            buttonNuevo.Location = new Point(775, 103);
+            buttonNuevo.Name = "buttonNuevo";
+            buttonNuevo.Size = new Size(100, 43);
+            buttonNuevo.TabIndex = 10;
+            buttonNuevo.Text = "Nuevo";
+            buttonNuevo.UseVisualStyleBackColor = true;
+            buttonNuevo.Click += buttonNuevo_Click;
             // 
             // groupBoxListaPersonas
             // 
@@ -175,6 +190,7 @@
             buttonAgregar.TabIndex = 7;
             buttonAgregar.Text = "Agregar";
             buttonAgregar.UseVisualStyleBackColor = true;
+            buttonAgregar.Click += buttonAgregar_Click;
             // 
             // buttonModificar
             // 
@@ -266,5 +282,6 @@
         private ColumnHeader NombreHeader2;
         private ColumnHeader ApellidoHeader3;
         private ColumnHeader TelefonoHeader4;
+        private Button buttonNuevo;
     }
 }
