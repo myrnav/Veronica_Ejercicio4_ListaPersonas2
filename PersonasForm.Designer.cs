@@ -50,6 +50,7 @@
             ApellidoHeader3 = new ColumnHeader();
             TelefonoHeader4 = new ColumnHeader();
             button1 = new Button();
+            button2 = new Button();
             groupBoxPersonaEdicion.SuspendLayout();
             groupBoxListaPersonas.SuspendLayout();
             SuspendLayout();
@@ -140,6 +141,7 @@
             // 
             // groupBoxPersonaEdicion
             // 
+            groupBoxPersonaEdicion.Controls.Add(button2);
             groupBoxPersonaEdicion.Controls.Add(button1);
             groupBoxPersonaEdicion.Controls.Add(buttonNuevo);
             groupBoxPersonaEdicion.Controls.Add(buttonCancelar);
@@ -254,6 +256,15 @@
             button1.Text = "Hola";
             button1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            button2.Location = new Point(379, 219);
+            button2.Name = "button2";
+            button2.Size = new Size(163, 23);
+            button2.TabIndex = 12;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // PersonasForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -295,5 +306,6 @@
         private ColumnHeader TelefonoHeader4;
         private Button buttonNuevo;
         private Button button1;
+        private Button button2;
     }
 }
